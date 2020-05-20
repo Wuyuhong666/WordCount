@@ -10,6 +10,11 @@ int main(int argc,char *argv[])
 	FILE *fp;
 	int n=0;
 	int i=0; 
+	if(argc!=3)
+	{
+		printf("参数输入数量有误！");
+		exit(0);
+	}
 	if((fp=fopen(argv[2],"r"))==NULL)
 	{ 
 		printf("Open file error\n");
